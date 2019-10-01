@@ -36,4 +36,19 @@ describe("Bombergame", function() {
     juego.agregarUsuario('pepe');
     expect(juego.usuarios["pepe"].nick).toBe("pepe");
   });
+  it("salir usuario", function() {
+    juego.agregarUsuario('pepe');
+    juego.agregarUsuario('ana');
+    juego.crearPartida("una","pepe");
+    juego.unirAPartida("unapepe","ana");
+    juego.salir("unapepe","pepe");
+    expect(juego.partidas.unapepe.jugadores.pepe).toBe(undefined);
+    expect(Object.keys(juego.partidas.unapepe.jugadores).length).toEqual(1);
+  });
+  it("salir eliminar partida", function() {
+    juego.agregarUsuario('pepe');
+    juego.crearPartida("una","pepe");
+    juego.salir("unapepe","pepe");
+    expect(juego.partidas.unapepe).toBe(undefined);
+  });
 });
