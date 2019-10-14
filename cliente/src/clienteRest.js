@@ -1,13 +1,13 @@
 function ClienteRest(){
 
 	this.agregarUsuario=function(nick){
-		$.getJSON("/agregarUsuario/"+nick,function(data){    
-            console.log(data);
+			console.log(data);
+			mostrarUsuario(data);
         });
 	};
 	this.crearPartida=function(partida,nick){
 		$.getJSON("/crearPartida/" +partida+ "/" +nick,function(data){    
-            console.log(data);
+			console.log(data);
         });
 	};
 	this.obtenerPartidas=function(){
