@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+    font-family: 'Numans', sans-serif;
+    background-color: rgb(46, 60, 85);
+}
+h3{
+    color: white;
+}
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 570px;
+margin-top: auto;
+margin-bottom: auto;
+width: 1000px;
+background-image: url('https://images3.alphacoders.com/572/thumb-1920-572611.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 200px;
+top: -5px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: rgb(0, 0, 0);
+background-color: white;
+width: 150px;
+margin-left: 3px;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+#cerrarSesion {
+    margin-left: 12px;
+    margin-right: 10px;
+}
+#modificarUsuario {
+    margin-right: 10px;
+}
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 150px;
+}
+
+td {
+    color:white;
+}
+tr {
+    color:white;
+}
+.crearPartida_btn{
+    color: black;
+    background-color: #FFC312;
+}
+.historialPartidas_btn{
+    color: black;
+    background-color: #FFC312;
+    margin-left: 10px;
+}
+
+#iniciarSesionBtn{
+    color: black;
+    background-color: #FFC312;
+    border:0 !important;
+    margin-left: 1%;
+}
+#iniciarSesionBtn:hover{
+    color: black;
+    background-color: white;
+}
+#registrarseBtn{
+    color: black;
+    background-color: #FFC312;
+    border:0 !important;
+    margin-left: 1%;
+}
+#registrarseBtn:hover{
+    color: black;
+    background-color: white;
+}
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+#modificarBtn {
+    width: 300px;
+}
+dialog {
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    color: black;
+    margin: auto;
+    border-width: initial;
+    border-style: solid;
+    background: white;
+}
+
+dialog::backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.1);
+}
+
+/*Combo box*/
+
+#mainselection select {
+    
+    border: 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    
+    padding: 2px 10px;
+    width: 378px;
+    *width: 350px;
+    *background: #FFC312;
+    -webkit-appearance: none;
+ }
+ 
+ #mainselection {
+    margin-bottom: 10px;
+    overflow:hidden;
+    width:350px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 1px 1px 11px #330033;
+    background: #FFC312 url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+ }
